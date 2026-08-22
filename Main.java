@@ -43,11 +43,10 @@ public class Main
 	       default:
 	           System.out.println("Opcion no valida. Intenta de nuevo.");
 	           
-	           
-	           
 	     }
 	         
 	     } while (Opcion != 4);
+         teclado.close ();
 	  
 	         
     	}
