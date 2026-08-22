@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main
 {
@@ -6,6 +7,10 @@ public class Main
 	     int Opcion = 0;
 	     String Usuario = "";
 	     String Contraseña = "";
+	     String Nombre = "";
+	     String Edad = "";
+	     String Correo = "";
+	     String Teléfono = "";
 	     do {
 	         System.out.println("Menú principal");
 	         System.out.println("1 Crear Usario");
@@ -18,7 +23,15 @@ public class Main
 	     
 	     switch (Opcion) {
 	         case 1:
-	         System.out.println("Ingrese un Usuario");
+	         System.out.println("Nombre ");
+	         Nombre = teclado.nextLine();
+	         System.out.println("Edad ");
+	         Edad = teclado.nextLine();
+	         System.out.println("Correo electronico");
+	         Correo = teclado.nextLine();
+	         System.out.println("Teléfono");
+	         Teléfono = teclado.nextLine();
+	         System.out.println("Cree un Usuario ");
 	         Usuario = teclado.nextLine();
 	         System.out.println("Contraseña");
 	         Contraseña = teclado.nextLine();
@@ -28,11 +41,16 @@ public class Main
 	        
 	        case 2: 
 	            System.out.println("Bienvenido " + Usuario);
-	            
+	            System.out.println("" + Nombre);
+	            System.out.println("Edad: " + Edad);
+	            System.out.println("Correo: " + Correo);
+	            System.out.println("Tel: " + Teléfono);
+	            System.out.println("Contraseña: *******\n");
+
 	           break;
 	           
 	       case 3:
-	           System.out.println("Edita tu Usuario " + Usuario);
+	           System.out.println("Cambiar tu Usuario " + Usuario);
 	           Usuario = teclado.nextLine();
 	           System.out.println("Usuario correctamente cambiado\n");
 	           
@@ -51,3 +69,6 @@ public class Main
 	         
     	}
 	}
+	
+
+	      
